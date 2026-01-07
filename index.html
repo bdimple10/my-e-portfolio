@@ -292,12 +292,20 @@
     <div class="container">
         <header>
             <div class="profile-img">
-                <!-- To add your photo: 
-                     1. Save this HTML file
-                     2. Place your photo in the same folder as the HTML file
-                     3. Name your photo "profile.jpg" 
-                     4. Or replace "profile.jpg" below with your photo's filename -->
-                <img src="profile.jpg" alt="Dimple Bhatia" onerror="this.style.display='none'; this.parentElement.innerHTML='DB';">
+                <!-- INSTRUCTIONS TO ADD YOUR PHOTO:
+                     Method 1: Upload to a free image hosting service
+                     - Go to imgur.com or imgbb.com
+                     - Upload your photo
+                     - Copy the direct image link
+                     - Replace YOUR_IMAGE_URL_HERE below with that link
+                     
+                     Method 2: Use base64 (recommended for offline use)
+                     - Go to base64-image.de
+                     - Upload your photo
+                     - Copy the base64 code
+                     - Replace the src below with: src="data:image/jpeg;base64,YOUR_BASE64_CODE"
+                -->
+                <img src="YOUR_IMAGE_URL_HERE" alt="Dimple Bhatia" onerror="this.style.display='none'; this.parentElement.innerHTML='DB';">
             </div>
             <h1>DIMPLE BHATIA</h1>
             <p class="subtitle">IBEC B.Ed. Student | Aspiring IB Educator</p>
@@ -312,11 +320,11 @@
         <nav>
             <button class="nav-btn active" onclick="showSection('about')">Profile</button>
             <button class="nav-btn" onclick="showSection('education')">Education</button>
+            <button class="nav-btn" onclick="showSection('philosophy')">Teaching Philosophy</button>
             <button class="nav-btn" onclick="showSection('internships')">Internship Experience</button>
             <button class="nav-btn" onclick="showSection('projects')">Projects & Research</button>
             <button class="nav-btn" onclick="showSection('certifications')">Certifications</button>
             <button class="nav-btn" onclick="showSection('conferences')">Conferences & Seminars</button>
-            <button class="nav-btn" onclick="showSection('philosophy')">Teaching Philosophy</button>
             <button class="nav-btn" onclick="showSection('languages')">Language Proficiency</button>
         </nav>
 
@@ -442,6 +450,19 @@
             <h2>Teaching Projects & B.Ed. Assignments</h2>
             
             <div class="project-card card">
+                <h3>🎥 Panchakosha: Understanding the Five Layers of Human Existence</h3>
+                <p><strong>Course:</strong> Value Added Course | <strong>Format:</strong> Video Presentation</p>
+                <p><strong>Topic:</strong> Panchakosha (The Five Sheaths/Koshas)</p>
+                <p><strong>Description:</strong> Comprehensive video presentation exploring the ancient Indian philosophical concept of Panchakosha - the five layers of human existence. This presentation delves into the five koshas: Annamaya Kosha (physical body), Pranamaya Kosha (vital energy), Manomaya Kosha (mental/emotional layer), Vijnanamaya Kosha (wisdom/intellect), and Anandamaya Kosha (bliss layer). The video explains how understanding these layers contributes to holistic education and student well-being.</p>
+                <p><strong>Educational Relevance:</strong> Demonstrates the integration of Indian philosophical concepts with modern educational practices, emphasizing holistic development, mindfulness, and the importance of addressing students' physical, emotional, intellectual, and spiritual dimensions in teaching.</p>
+                <p><strong>Skills Demonstrated:</strong> Video content creation, research and synthesis of philosophical concepts, presentation skills, connecting traditional knowledge with contemporary education, value-based education.</p>
+                <p style="margin-top: 15px;">
+                    <strong>🔗 Watch Video:</strong><br>
+                    <a href="https://drive.google.com/file/d/1MJ1aiZ59Yh6JO5L1YKlPBjm8kaNXkqj2/view?usp=drive_link" target="_blank" style="color: #667eea; text-decoration: none; font-weight: bold;">🎬 View Panchakosha Video Presentation</a>
+                </p>
+            </div>
+
+            <div class="project-card card">
                 <h3>📘 Disability Handbook: "One Classroom, Many Needs"</h3>
                 <p><strong>Course:</strong> Creating an Inclusive Classroom | <strong>Semester:</strong> 2</p>
                 <p><strong>Description:</strong> Developed a comprehensive handbook on inclusive education practices for students with disabilities including autism, visual impairment, and cerebral palsy. The handbook covers foundational principles, practical implementation strategies, legal frameworks (RTE, RPWD Act, NEP 2020), curriculum planning, assistive devices, and documentation procedures.</p>
@@ -563,6 +584,14 @@
                     <a href="https://padlet.com/bdimple10/the-learning-lane-rjm3dbsu1stobb46" target="_blank" style="color: #667eea; text-decoration: none; font-weight: bold;">🔍 Visit The Learning Lane on Padlet</a>
                 </p>
             </div>
+
+            <div class="card" style="margin-top: 30px; background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%); border-left: 5px solid #764ba2; padding: 30px;">
+                <h3 style="color: #764ba2; margin-bottom: 15px;">📂 All Projects & Documents</h3>
+                <p style="margin-bottom: 15px; line-height: 1.7; font-size: 1.05em;">Access complete documentation of all my B.Ed. projects, lesson plans, research papers, and assignments:</p>
+                <a href="https://drive.google.com/drive/folders/1mDLk8JC_SqtfaAyT1S5Gq7JZ-1kfBnEg?usp=drive_link" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: transform 0.3s; box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);">
+                    📁 View All Projects on Google Drive
+                </a>
+            </div>
         </div>
 
         <div id="certifications" class="section">
@@ -680,6 +709,14 @@
                 <p>✓ Innovation in Teaching Methodologies</p>
                 <p>✓ Event Management & Volunteer Leadership</p>
                 <p>✓ Social Responsibility & Community Service</p>
+            </div>
+
+            <div class="card" style="margin-top: 30px; background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%); border-left: 5px solid #764ba2;">
+                <h3 style="color: #764ba2; margin-bottom: 15px;">📂 All Certificates</h3>
+                <p style="margin-bottom: 15px; line-height: 1.7;">View all my certificates, letters of appreciation, and official documents in one place:</p>
+                <a href="https://drive.google.com/drive/folders/1spPqTkqMp6RO11WXBYD-gD-O7iwGXI-b?usp=drive_link" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: transform 0.3s;">
+                    📁 View All Certificates on Google Drive
+                </a>
             </div>
         </div>
 
